@@ -87,7 +87,7 @@ public final class Bomb implements Shape,Runnable,OverlapSensitive,CanBeAttacked
 
     @Override
     public void attacked(CanAttack attacker) {
-        //子弹被攻击后直接“挂掉”
+        //炮弹被攻击后直接“挂掉”
         this.die();
     }
 
