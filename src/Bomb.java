@@ -82,6 +82,7 @@ public final class Bomb implements Shape,Runnable,OverlapSensitive,CanBeAttacked
     public void die(){
         //“挂掉”即不存在，所以将炮弹的存在状态设为false
         this.exist = false;
+        //从自己所在的集合中删除
         Helper.removeObjectFromCollectionCollection(this.whereIamIn,this);
     }
 

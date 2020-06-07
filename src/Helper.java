@@ -67,6 +67,7 @@ public class Helper {
         int cy2 = overlapped.getCy();
         //两个对象中心点之间的距离
         double distance=Math.pow(Math.pow(cx1-cx2,2)+Math.pow(cy1-cy2,2),0.5);
+        //距离小于200即可攻击
         return distance<200;
     }
 }
